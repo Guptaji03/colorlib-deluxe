@@ -1,0 +1,179 @@
+
+/* background image part */
+*{
+    margin: 0;
+    padding: 0;
+  
+
+}
+body{
+    background-color:#F8F9FA ;
+    font-family: "Poppins", sans-serif;
+}
+h1{
+  font-weight: 300;
+}
+.img{
+background-image: url(https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp);
+height: 400px;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* center part */
+
+.center{
+  /* padding: 120px; */
+  margin: 10%;
+  display: grid;
+  gap: 45px;
+}
+
+.contact{
+  display: flex;
+
+  gap: 40px;
+}
+
+.same{
+  box-sizing: border-box;
+      height: 150px;
+      background-color: white;
+      width: 25%;
+      padding: 30px;
+      color: rgb(206, 198, 198);
+}
+span{
+  color: black;
+}
+
+
+/* contact information */
+ .mapform{
+
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 40px;
+  
+
+ }
+ .map{
+   position: relative;
+   overflow: hidden;
+   padding-top: 56.25%;
+   width: 100%;
+   /* background-color: white; */
+ }
+
+.iframe{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.form{
+  
+  box-sizing: border-box;
+   /* width: 50%; */
+   background-color: white;
+   padding: 10%;
+
+
+ }
+/* inputs */
+.input{
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: large;
+  height: 70px;
+  width: 100%;
+   /* margin: auto; */
+
+}
+/* textarea */
+#area{
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: x-large;
+  height: 200px;
+  width: 100%;
+}
+/* button */
+.submit{
+    height: 60px;
+    border-radius: 30px;
+    font-size: large;
+    width: 250px;
+    color: white;
+    background-color: #8D703B;
+}
+/* ====================button hover =================*/
+.submit:hover {
+    background-color:white;
+    color: #8D703B;
+  }
+  /* ========================================== */
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    .iframe{
+      height: 50%;
+    }
+    .same{
+      padding: 10px;
+      height: 200px;
+    }
+    .submit{
+      width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .mapform{
+      grid-template-columns: repeat(1,1fr);
+      gap: 0px;
+    }
+    .map{
+      box-sizing: border-box;
+      width: 100%;
+      order: 1;
+    }
+    .iframe{
+      width: 100%;
+    }
+    /* .center{
+      margin: 10% 10% 10% 10%;
+    } */
+    .contact{
+      flex-direction: column;
+      gap: 0;
+
+    }
+    .same{
+      width: 100%;
+    }
+    .img{
+     
+      height: 400px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      
+      }
+      .same{
+    padding: 10px;
+  }
+  }
+  
+  .form{
+    width: 100%;
+   
+ 
+  }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .submit{
+      width: 200px;
+    }
+  }
+  /*  */

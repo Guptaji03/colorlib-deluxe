@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.img{
+    background-image: url(https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+    .cards_container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /* padding: 125px; */
+        margin: 10%;
+        /* width: 100%; */
+        gap: 30px;
+        row-gap: 50px;
+    }
+ .image{
+     height: 275px;
+     width: 100%;
+ }   
+
+ .cards{
+     display: grid;
+     gap: 15px;
+     /* width: 285px; */
+  box-sizing: border-box;
+ }
+ .text{
+     font-size:20px;
+ }
+ .comment{
+     color: rgb(206, 203, 203);
+ }
+ .text :hover{
+     color: #8D703B;
+ }
+.circle_container{
+    display: flex;
+  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 20px;
+   
+}
+.circle{
+    box-sizing: border-box;
+    padding: 7px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #8D703B;
+    border-radius: 50% 50%;
+}
+.one{
+    background-color: #8D703B;
+}
+
+@media screen and (max-width: 600px) {
+
+    .cards_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* padding: 125px; */
+        margin: 10%;
+        /* width: 100%; */
+        gap: 30px;
+        row-gap: 50px;
+    }
+}
