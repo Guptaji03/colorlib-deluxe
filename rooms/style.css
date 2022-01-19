@@ -1,0 +1,261 @@
+body{
+    background: #f8f9fa!important;
+    font-family: "Poppins",sans-serif;
+    margin:0;
+    padding:0;
+}
+.container{
+    /* border:1px solid black; */
+   
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 3fr 1fr;
+  margin-left: 5%;
+}
+.room-img{
+    height:45%;
+    width:100%;
+    
+   
+}
+.room-spec{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 10%;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.rooms-div{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    /* border:1px solid black; */
+    /* padding-left: 5%;
+    box-sizing: border-box; */
+     
+}
+   
+.room-card{
+    border:1px solid #e6e6e6;
+    text-align: center;
+    background: white;
+    padding-bottom: 25%;
+    border-top: 1px solid transparent;
+    width:97%;
+    /* border:1px solid black; */
+    height: 90%;
+    box-sizing: border-box;   
+   
+}
+
+
+.right-sec{
+    /* border:1px solid black; */
+    height:950px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
+}
+.searchform{
+    border:1px solid #e6e6e6;
+    width:90%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    height:60%
+    
+}
+.rating{
+    height:30%;
+    width:90%;
+    margin-top:20px;
+    border:1px solid #e6e6e6;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.far{
+    color:#8d703b;
+    
+}
+.fas{
+    color:#8d703b;
+}
+.slider1{
+    background-color:#8d703b;
+}
+
+.searchform div input{
+    height:180%;
+    border:1px solid #e6e6e6;
+    width:120%;
+
+}
+#roomtype,#numofadults,#numofchild{
+    height:180%;
+    width:120%;
+    border:1px solid #e6e6e6;
+    color: gray;
+}
+#search{
+    height:50px;
+    width:120%;
+    background:#8d703b ;
+    border-color: #8d703b;
+    border-radius: 3px;
+   border-style: none;
+   color:white;
+   font-size: medium;
+}
+.bigsizename{
+    font-family: "Playfair Display", serif;
+    font-size: 130%;
+    font-weight: 50px;
+}
+
+  .horizontal{
+      width:80%;
+      color: gray;
+      opacity:0.3;
+  }
+
+  .cost-div{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: center;
+     /* border:1px solid black ; */
+      align-items: baseline;
+      height:20%;
+      margin-top: -15%    
+     
+  }
+  .pricestyle{
+      font-size: 25px;
+      font-family: "Poppins",sans-serif;
+      padding-bottom:-4px;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+       width: fit-content; 
+       border-color:#8d703b;
+        
+  }
+  .pricepernight{
+    font-size: 90%;
+    font-family: "Poppins",sans-serif;
+    color: gray;
+   
+
+  }
+  .item{
+      margin:3px;
+      
+  }
+  .booknow{
+      font-size: 16px;
+      background: white;
+      border:none;
+  }
+  .fa-long-arrow-alt-right{
+      color:black
+  }
+  .line1star,.ratinghead{
+      margin-top: -20px;
+  }
+  .slider1{
+      accent-color: #8d703b ;
+  }
+.book{
+    text-decoration: none;
+    color:black;
+}
+  @media screen and (max-width:900px){
+      .container{
+          grid-template-columns: 1fr;
+          margin:20px;
+      }
+      .rooms-div{
+          grid-template-columns: repeat(2,1fr);
+      }
+      .searchform{
+          justify-content:space-between;
+          align-content: flex-start;
+          width:100%
+          /* height:60% */
+      }
+      .rating{
+          width:100%;
+      }
+      .searchform div input{
+       
+        width:200%;
+    
+    }
+    #roomtype,#numofadults,#numofchild{
+       
+        width:200%;
+       
+    }
+    #search{
+        width:200%
+    }
+
+     
+
+  }
+  
+
+  @media screen and (max-width:600px){
+    .container{
+        grid-template-columns: 1fr;
+        margin:20px;
+    }
+    .rooms-div{
+        grid-template-columns: 1fr;
+    }
+    .searchform{
+        justify-content:space-between;
+        align-content: flex-start;
+        width:150%;
+        /* height:60% */
+
+    }
+    .room-card{
+        width:100%;
+        
+    }
+    .rating{
+        width:100%;
+    }
+    .searchform div input{
+     
+      width:250%;
+  
+  }
+  #roomtype,#numofadults,#numofchild{
+     
+      width:250%;
+     
+  }
+  #search{
+      width:260%
+  }
+  .cost-div{
+      margin-top: -10%;
+  }
+
+   
+
+}
+
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "https://kit.fontawesome.com/afc47601c9.js" crossorigin = "anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class = "container">
+        <div class = "rooms-sec">
+            <div class = "rooms-div">
+
+            </div>
+        </div>
+        <div class = "right-sec">
+            <div class = "searchform">
+                <p class = "bigsizename" style="font-size:17px">Advanced Search</p>
+               <div><input type ="text" placeholder="Check In Date"/></div> 
+              <div>  <input type ="text" placeholder="Check Out Date"/></div>
+                <div>
+                <select id="roomtype">
+                    <option value="RoomType">Room Type</option>
+                    <option value="Suite">Suite</option>
+                    <option value="FamilyRoom">Family Room</option>
+                    <option value="DeluxeRoom">Deluxe Room</option>
+                    <option value="ClassicRoom">Classic Room</option>
+                    <option value="SuperiorRoom">Superior Room</option>
+                    <option value="LuxuryRoom">Luxury Room</option>
+                </select></div>
+                <div>
+                <select id="numofadults">
+                    <option value="0 Adult">0 Adult</option>
+                    <option value="1 Adult">1 Adult</option>
+                    <option value="2 Adult">2 Adult</option>
+                    <option value="3 Adult">3 Adult</option>
+                    <option value="4 Adult">4 Adult</option>
+                    <option value="5 Adult">5 Adult</option>
+                    <option value="6 Adult">6 Adult</option>
+                </select></div>
+                <div>
+                <select id="numofchild">
+                    <option value="0 Children">0 Children</option>
+                    <option value="1 Children">1 Children</option>
+                    <option value="2 Children">2 Children</option>
+                    <option value="3 Children">3 Children</option>
+                    <option value="4 Children">4 Children</option>
+                    <option value="5 Children">5 Children</option>
+                    <option value="6 Children">6 Children</option>
+                </select></div>
+                <div>
+                    <input type="number" value="25000" style="width:60px;height:25px"/>
+                    <span style="color:gray">-</span>
+                    <input type ="number" value="50000" style="width:60px;height:25px"/>
+                </div>
+               <div> <input type = "range" class = "slider1" min = "0" max = "70000" value = "50000" /></div>
+                <!-- <input type = "range" class = "slider2" min = "0" max = "70000" value = "50000" style="background-color:#8d703b"/> -->
+             
+                <div>  <button id = "search">Search</button></div>
+
+
+            </div>
+            <div class = "rating">
+               <div class ="ratinghead"><p class = "bigsizename" style="font-size:17px">Star Rating</p></div> 
+                <div class = "line1star">
+                    <input type="checkbox"/>
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class = "line2star">
+                    <input type="checkbox"/>
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="far fa-star"></i>
+                </div>
+                <div class = "line3star">
+                    <input type="checkbox"/>
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="far fa-star"></i>&nbsp;
+                    <i class="far fa-star"></i>
+                </div>
+                <div class = "line4star">
+                    <input type="checkbox"/>
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="far fa-star"></i>&nbsp;
+                    <i class="far fa-star"></i>&nbsp;
+                    <i class="far fa-star"></i>
+                </div>
+                <div class = "line5star">
+                    <input type="checkbox"/>
+                    <i class="fas fa-star"></i>&nbsp;
+                    <i class="far fa-star"></i>&nbsp;
+                    <i class="far fa-star"></i>&nbsp;
+                    <i class="far fa-star"></i>&nbsp;
+                    <i class="far fa-star"></i>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+var rooms = [
+    {
+        name:"Suite Room",
+        cost:"120.00",
+        Max: "3 Persons",
+        Size: "45 m2",
+        View: "Sea View",
+        Bed: "1",
+        image:"https://preview.colorlib.com/theme/deluxe/images/xroom-1.jpg.pagespeed.ic.0q4Bp6Qeo7.webp"
+
+    },
+
+    {
+        name:"Family Room",
+        cost:"20.00",
+        Max: " 3 Persons",
+        Size: " 45 m2",
+        View: "Sea View",
+        Bed: "1",
+        image:"https://preview.colorlib.com/theme/deluxe/images/xroom-2.jpg.pagespeed.ic.qQEQzEZcIj.webp"
+
+},
+
+{
+    name:"Deluxe Room",
+        cost:"150.00",
+       Max: "5 Persons",
+        Size: " 45 m2",
+        View: " Sea View",
+        Bed: " 2",
+        image:"https://preview.colorlib.com/theme/deluxe/images/xroom-3.jpg.pagespeed.ic.-BqmSKjZKz.webp"
+
+},
+
+
+
+{
+    name:"Classic Room",
+        cost:"130.00",
+        Max: " 5 Persons",
+        Size: " 45 m2",
+        View: " Sea View",
+        Bed: " 2",
+        image:"https://preview.colorlib.com/theme/deluxe/images/xroom-4.jpg.pagespeed.ic.5v9gH2L7pP.webp"
+
+},
+{
+    name:"Superior Room",
+        cost:"300.00",
+        Max: " 6 Persons",
+        Size: "45 m2",
+        View: " Sea View",
+        Bed: " 3",
+        image:"https://preview.colorlib.com/theme/deluxe/images/xroom-5.jpg.pagespeed.ic.teuAgd-yoQ.webp"
+
+},
+
+{
+    name:"Luxury Room",
+        cost:"500.00",
+      Max: " 5 Persons",
+        Size: " 45 m2",
+        View: " Sea View",
+        Bed: " 2",
+        image:"https://preview.colorlib.com/theme/deluxe/images/xroom-6.jpg.pagespeed.ic.KiztQkl1vI.webp"
+
+}
+]
+
+function appendRooms(data){
+ data.forEach(room => {
+     var div = document.createElement('div');
+    div.setAttribute("class","room-card")
+     var img = document.createElement('img');
+     img.setAttribute("class","room-img")
+     var name = document.createElement('p')
+     name.setAttribute("class","bigsizename")
+     var price = document.createElement('p')
+     price.setAttribute("class","pricestyle")
+    
+     var specifications = document.createElement('div')
+     specifications.setAttribute("class","room-spec") 
+     var max  =document.createElement('div')
+     var size  =document.createElement('div')
+     var view  =document.createElement('div')
+     var bed  = document.createElement('div')
+     var line = document.createElement('hr')
+
+max.setAttribute("class","item")
+size.setAttribute("class","item")
+view.setAttribute("class","item")
+bed.setAttribute("class","item")
+
+
+
+
+
+     var costdiv = document.createElement('div')
+     costdiv.setAttribute("class","cost-div")
+     var pernight = document.createElement('p')
+     pernight.setAttribute("class","pricepernight")
+     
+     
+     
+     line.setAttribute("class","horizontal") 
+     
+     var button = document.createElement('button')
+     button.setAttribute("class","booknow")
+     
+    
+     
+     img.src = room.image;
+     name.innerText = room.name;
+     
+     price.innerHTML = "$"+room.cost;
+     
+    
+     
+     pernight.innerHTML = "&nbsp;&nbsp;per night"
+     
+     costdiv.append(price,pernight)
+     
+    
+     
+    
+     max.innerHTML="<span style='color:#8d703b'>Max:</span>"+room.Max;
+     size.innerHTML="<span style='color:#8d703b'>Size:</span>"+room.Size;
+     view.innerHTML = "<span style='color:#8d703b'>View:</span>"+room.View;
+     bed.innerHTML ="<span style='color:#8d703b'>Bed:</span>"+room.Bed;
+     
+     button.innerHTML ="<a class = 'book' href ='#'>Book Now<i class='fas fa-long-arrow-alt-right'></i></a>" 
+
+
+     specifications.append(max,size,view,bed)
+     div.append(img,name,costdiv,specifications,line,button)
+
+      document.querySelector('.rooms-div').append(div)
+     
+
+
+ } )
+}
+ appendRooms(rooms)
+
+
+
+
+</script>
