@@ -26,12 +26,14 @@ body{
     margin-bottom: 10%;
     font-size: 13px;
     justify-content: space-between;
+    /* border:1px solid black; */
 }
 
 .rooms-div{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 30px;
+    grid-column-gap: 3%;
+    grid-row-gap:1%;
     /* border:1px solid black; */
     /* padding-left: 5%;
     box-sizing: border-box; */
@@ -42,12 +44,13 @@ body{
     border:1px solid #e6e6e6;
     text-align: center;
     background: white;
-    padding-bottom: 25%;
+    padding-bottom: 20%;
     border-top: 1px solid transparent;
     width:97%;
     /* border:1px solid black; */
-    height: 90%;
-    box-sizing: border-box;   
+    height: 85%;
+    /* box-sizing: border-box;    */
+    /* margin-bottom: 20%; */
    
 }
 
@@ -58,6 +61,8 @@ body{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding:0
+    
     
     
 }
@@ -136,7 +141,7 @@ body{
       justify-content: center;
      /* border:1px solid black ; */
       align-items: baseline;
-      height:20%;
+      height:15%;
       margin-top: -15%    
      
   }
@@ -165,6 +170,8 @@ body{
       font-size: 16px;
       background: white;
       border:none;
+      
+     
   }
   .fa-long-arrow-alt-right{
       color:black
@@ -182,10 +189,12 @@ body{
   @media screen and (max-width:900px){
       .container{
           grid-template-columns: 1fr;
-          margin:20px;
+          /* margin:20px; */
+          grid-row-gap:1%
       }
       .rooms-div{
           grid-template-columns: repeat(2,1fr);
+          grid-row-gap:1%;
       }
       .searchform{
           justify-content:space-between;
@@ -198,18 +207,27 @@ body{
       }
       .searchform div input{
        
-        width:200%;
+        width:300%;
+        /* height:70% */
     
     }
     #roomtype,#numofadults,#numofchild{
        
-        width:200%;
+        width:300%;
        
     }
     #search{
-        width:200%
+        width:300%
     }
-
+   .room-card{
+       
+       padding-bottom: 10%;
+      
+      
+   }
+   /* .cost-div{
+       margin-top: 5px;
+   } */
      
 
   }
@@ -219,19 +237,25 @@ body{
     .container{
         grid-template-columns: 1fr;
         margin:20px;
+        grid-row-gap:5%;
     }
     .rooms-div{
         grid-template-columns: 1fr;
+        grid-row-gap:1%;
+        
     }
     .searchform{
         justify-content:space-between;
         align-content: flex-start;
-        width:150%;
+        width:100%;
         /* height:60% */
 
     }
     .room-card{
         width:100%;
+        height:100%;
+        padding-bottom: 3%;
+        
         
     }
     .rating{
@@ -239,20 +263,23 @@ body{
     }
     .searchform div input{
      
-      width:250%;
+      width:200%;
   
   }
   #roomtype,#numofadults,#numofchild{
      
-      width:250%;
+      width:200%;
      
   }
   #search{
-      width:260%
+      width:200%
   }
   .cost-div{
-      margin-top: -10%;
+      margin-top: -8%;
   }
+  /* .room-spec{
+      margin-top: -5%;
+  } */
 
    
 
