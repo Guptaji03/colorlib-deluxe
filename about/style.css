@@ -165,7 +165,7 @@ a {
   opacity: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -233,5 +233,15 @@ a {
   }
   .card-container h2 {
     margin-bottom: 1rem;
+  }
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  body > section.facilities-section-container > div:nth-child(4) > h2{
+    margin-bottom: 41%;
+  }
+  body > section.main > div.video-div {
+    min-width: 350px;
   }
 }
