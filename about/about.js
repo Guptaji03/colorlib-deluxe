@@ -9,7 +9,7 @@ counters.forEach((counter) => {
     const target = +counter.getAttribute("data-target");
     const count = +counter.innerText;
 
-    const inc = target / 100;
+    const inc = target / 10;
     console.log(count,target);
     if (count < target) {
       counter.innerText = count+inc;
@@ -31,14 +31,15 @@ counters.forEach((counter) => {
 const cards = document.querySelectorAll(".animate");
 
 const options = {
-  //   rootMargin: "0px 0px 25px 0px",
-  threshold: 0.5,
+    // rootMargin: "0px 0px 50% 0px",
+  threshold: 0.7
 };
 const socialObserver = new IntersectionObserver((entries) => {
   console.log(entries);
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
       entry.target.style.animation = "transitionIn 0.75s ease-out";
+      entry.target.style.opacity = "1";
     }
   });
 }, options);
