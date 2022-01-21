@@ -5,11 +5,11 @@ body {
 }
 
 @keyframes transitionIn {
-  from{
+  from {
     opacity: 0;
     transform: translateY(40px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -65,12 +65,11 @@ body {
   background-position: center center;
   width: 360vw;
   max-width: 41%;
-flex: 50%;
+  flex: 50%;
   margin: 0% 2%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .video-div-play-btn {
   height: 100px;
@@ -132,6 +131,7 @@ a {
   margin: 10% auto;
   margin-bottom: 13%;
   box-sizing: border-box;
+  height: 200px;
 }
 .card-container {
   display: flex;
@@ -142,6 +142,7 @@ a {
   font-family: "Poppins", Arial, sans-serif;
   color: grey;
   padding: 0% 1%;
+  min-height: 200px;
   /* margin: auto 2%; */
 }
 .card-container h2 {
@@ -161,7 +162,7 @@ a {
   padding: 10%;
 }
 
-.animate{
+.animate {
   opacity: 0;
 }
 
@@ -191,7 +192,7 @@ a {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     line-height: 1.9rem;
-}
+  }
   .video-div {
     background-image: url("https://preview.colorlib.com/theme/deluxe/images/xbg_2.jpg.pagespeed.ic.e-nDkaGJ3O.webp");
     background-size: cover;
@@ -236,12 +237,70 @@ a {
   }
 }
 
-
-@media screen and (min-width:768px) and (max-width:992px) {
-  body > section.facilities-section-container > div:nth-child(4) > h2{
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body > section.facilities-section-container > div:nth-child(4) > h2 {
     margin-bottom: 41%;
   }
   body > section.main > div.video-div {
     min-width: 350px;
   }
 }
+/* css for site header */
+
+#site-header {
+  background-image: url("https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.VnO0khAEOw.webp");
+  /* width: 100%; */
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.header-nav-list {
+  position: relative;
+  top: 9rem;
+  color: whitesmoke;
+}
+.header-ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  gap: 20px;
+  margin: 0px;
+  padding-left: 0%;
+  color: rgba(255, 255, 255, 0.7);
+  
+}
+.header-ul li{
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-title h1 {
+  font-family: "Playfair Display";
+  /* width: 100%; */
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  text-align: center;
+  position: relative;
+  top: 9rem;
+  color: white;
+  font-size: 3em;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.head-anchor {
+  text-decoration: none;
+  color: white;
+}
+#site-header a {
+  text-decoration: none;
+  color: white;
+}
+
+/* css for site header */
