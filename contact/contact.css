@@ -102,17 +102,21 @@ span{
 }
 /* button */
 .submit{
-    height: 60px;
-    border-radius: 30px;
-    font-size: large;
-    width: 250px;
-    color: white;
-    background-color: #8D703B;
+  height: 60px;
+  border-radius: 30px;
+  font-size: large;
+  width: 250px;
+  color: white;
+  background-color: #8D703B;
+  transition: 0.3s;
+    border: 1px solid #8D703B;
 }
 /* ====================button hover =================*/
 .submit:hover {
-    background-color:white;
+    background-color:#ffffff;
     color: #8D703B;
+    /* transition: 0.3s; */
+    border: 1px solid #8D703B;
   }
   /* ========================================== */
   @media screen and (min-width: 700px) and (max-width: 1000px) {
@@ -125,6 +129,8 @@ span{
     }
     .submit{
       width: 200px;
+      /* transition: 0.3s; */
+      border: 1px solid #8D703B;
     }
   }
 
@@ -174,6 +180,8 @@ span{
   @media screen and (min-width: 300px) and (max-width: 400px) {
     .submit{
       width: 200px;
+      
+      border: 1px solid #8D703B;
     }
   }
   /*  */
