@@ -3,6 +3,7 @@ body{
     font-family: "Poppins",sans-serif;
     margin:0;
     padding:0;
+    
 }
 .container{
     /* border:1px solid black; */
@@ -23,9 +24,11 @@ body{
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     font-size: 13px;
     justify-content: space-between;
+    margin-top: 6%;
+   
     /* border:1px solid black; */
 }
 
@@ -77,6 +80,9 @@ body{
     height:60%
     
 }
+.searchinp{
+    width:75%
+}
 .rating{
     height:30%;
     width:90%;
@@ -104,24 +110,30 @@ body{
 .searchform div input{
     height:180%;
     border:1px solid #e6e6e6;
-    width:120%;
+    width:100%;
 
 }
 #roomtype,#numofadults,#numofchild{
     height:180%;
-    width:120%;
+    width:100%;
     border:1px solid #e6e6e6;
     color: gray;
 }
 #search{
     height:50px;
-    width:120%;
+    width:100%;
     background:#8d703b ;
     border-color: #8d703b;
     border-radius: 3px;
    border-style: none;
    color:white;
    font-size: medium;
+}
+#search:hover{
+    background: white;
+    color:#8d703b;
+    border:1px solid #8d703b;
+   
 }
 .bigsizename{
     font-family: "Playfair Display", serif;
@@ -133,6 +145,7 @@ body{
       width:80%;
       color: gray;
       opacity:0.3;
+     
   }
 
   .cost-div{
@@ -169,9 +182,11 @@ body{
   .booknow{
       font-size: 16px;
       background: white;
-      border:none;
-      
-     
+      border:none;   
+  }
+  .book-div{
+      height:10%;
+      text-align: center;
   }
   .fa-long-arrow-alt-right{
       color:black
@@ -186,7 +201,14 @@ body{
     text-decoration: none;
     color:black;
 }
-  @media screen and (max-width:900px){
+.book-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:10%
+}
+
+  @media screen and (max-width:991px){
       .container{
           grid-template-columns: 1fr;
           /* margin:20px; */
@@ -207,33 +229,67 @@ body{
       }
       .searchform div input{
        
-        width:300%;
+        width:90%;
         /* height:70% */
     
     }
     #roomtype,#numofadults,#numofchild{
        
-        width:300%;
+        width:90%;
        
     }
     #search{
-        width:300%
+        width:90%
     }
-   .room-card{
+    .searchinp{
+        width:100%
+    }
+   /* .room-card{
        
        padding-bottom: 10%;
-      
-      
-   }
-   /* .cost-div{
-       margin-top: 5px;
+         
    } */
+   .room-spec{
+       font-size: 20px;
+   }
+   .bigsizename{
+       font-size: 30px;
+   }
+   .cost-div{
+    margin-top:-2%
+   }
+   .pricestyle{
+    font-size: 30px;
+  }
+  .pricepernight{
+    font-size: 20px;
+  }
+  .booknow{
+      font-size: 20px;
+  }
+  .book-div{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height:10%
+  }
      
 
   }
+  @keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   
 
-  @media screen and (max-width:600px){
+  @media screen and (max-width:767px){
     .container{
         grid-template-columns: 1fr;
         margin:20px;
@@ -254,7 +310,8 @@ body{
     .room-card{
         width:100%;
         height:100%;
-        padding-bottom: 3%;
+        /* padding-bottom: -136.667px; */
+        box-sizing: border-box;
         
         
     }
@@ -263,24 +320,48 @@ body{
     }
     .searchform div input{
      
-      width:200%;
+      width:90%;
   
+  }
+  .searchinp{
+      width:100%
   }
   #roomtype,#numofadults,#numofchild{
      
-      width:200%;
+      width:90%;
      
   }
   #search{
-      width:200%
+      width:90%
   }
+  .bigsizename{
+      font-size: 40px;
+  }
+  
   .cost-div{
-      margin-top: -8%;
+      margin-top: -6%;
+      height:8%;
+     
   }
-  /* .room-spec{
-      margin-top: -5%;
-  } */
-
+  .pricestyle{
+    font-size: 30px;
+  }
+  .pricepernight{
+    font-size: 20px;
+  }
+  .room-spec{
+      margin-top: 4%;
+      font-size: 20px;
+  }
+  .book-div{
+      display:flex;
+      height:10%;
+      justify-content: center;
+      align-items: center;
+  }
+  .booknow{
+      font-size: 30px;
+  }
    
 
 }
