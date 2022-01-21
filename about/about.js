@@ -9,11 +9,11 @@ counters.forEach((counter) => {
     const target = +counter.getAttribute("data-target");
     const count = +counter.innerText;
 
-    const inc = target / 10;
+    const inc = target / 100;
     console.log(count,target);
     if (count < target) {
       counter.innerText = count+inc;
-      setTimeout(updateCount,20);
+      setTimeout(updateCount,50);
       
     }
     else{
@@ -31,7 +31,7 @@ counters.forEach((counter) => {
 const cards = document.querySelectorAll(".animate");
 
 const options = {
-    // rootMargin: "0px 0px 50% 0px",
+    rootMargin: "0px 50% 50% 0px",
   threshold: 0.7
 };
 const socialObserver = new IntersectionObserver((entries) => {

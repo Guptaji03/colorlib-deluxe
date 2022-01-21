@@ -142,6 +142,7 @@ a {
   font-family: "Poppins", Arial, sans-serif;
   color: grey;
   padding: 0% 1%;
+  min-height: 200px;
   /* margin: auto 2%; */
 }
 .card-container h2 {
