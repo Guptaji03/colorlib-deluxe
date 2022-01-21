@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rooms.css">
     <script src = "https://kit.fontawesome.com/afc47601c9.js" crossorigin = "anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
@@ -20,11 +20,13 @@
             </div>
         </div>
         <div class = "right-sec">
-            <div class = "searchform">
+            <div class = "searchform animate">
                 <span class = "bigsizename" style="font-size:20px">Advanced Search</span>
-               <div><input type ="text" placeholder="Check In Date"/></div> 
-              <div>  <input type ="text" placeholder="Check Out Date"/></div>
-                <div>
+               <div class = "searchinp"><input type ="text" placeholder="Check In Date"  onfocus="(this.type='date')"
+                onblur="(this.type='text')"/></div> 
+              <div class = "searchinp">  <input type ="text" placeholder="Check Out Date"  onfocus="(this.type='date')"
+                onblur="(this.type='text')"/></div>
+                <div class = "searchinp">
                 <select id="roomtype">
                     <option value="RoomType">Room Type</option>
                     <option value="Suite">Suite</option>
@@ -34,7 +36,7 @@
                     <option value="SuperiorRoom">Superior Room</option>
                     <option value="LuxuryRoom">Luxury Room</option>
                 </select></div>
-                <div>
+                <div class = "searchinp">
                 <select id="numofadults">
                     <option value="0 Adult">0 Adult</option>
                     <option value="1 Adult">1 Adult</option>
@@ -44,7 +46,7 @@
                     <option value="5 Adult">5 Adult</option>
                     <option value="6 Adult">6 Adult</option>
                 </select></div>
-                <div>
+                <div class = "searchinp">
                 <select id="numofchild">
                     <option value="0 Children">0 Children</option>
                     <option value="1 Children">1 Children</option>
@@ -54,19 +56,19 @@
                     <option value="5 Children">5 Children</option>
                     <option value="6 Children">6 Children</option>
                 </select></div>
-                <div>
+                <div class = "searchinp">
                     <input type="number" value="25000" style="width:60px;height:25px"/>
                     <span style="color:gray">-</span>
                     <input type ="number" value="50000" style="width:60px;height:25px"/>
                 </div>
-               <div> <input type = "range" class = "slider1" min = "0" max = "70000" value = "50000" /></div>
+               <div class = "searchinp"> <input type = "range" class = "slider1" min = "0" max = "70000" value = "50000" /></div>
                 <!-- <input type = "range" class = "slider2" min = "0" max = "70000" value = "50000" style="background-color:#8d703b"/> -->
              
-                <div>  <button id = "search">Search</button></div>
+                <div class = "searchinp">  <button id = "search">Search</button></div>
 
 
             </div>
-            <div class = "rating">
+            <div class = "rating animate">
                <div class ="ratinghead"><p class = "bigsizename" style="font-size:17px">Star Rating</p></div> 
                 <div class = "line1star">
                     <input type="checkbox"/>
@@ -194,7 +196,7 @@ var rooms = [
 function appendRooms(data){
  data.forEach(room => {
      var div = document.createElement('div');
-    div.setAttribute("class","room-card")
+    div.setAttribute("class","room-card animate")
      var img = document.createElement('img');
      img.setAttribute("class","room-img")
      var name = document.createElement('p')
@@ -227,9 +229,12 @@ bed.setAttribute("class","item")
      
      
      line.setAttribute("class","horizontal") 
+     var bookdiv = document.createElement('div')
+     bookdiv.setAttribute("class","book-div")
      
      var button = document.createElement('button')
      button.setAttribute("class","booknow")
+     bookdiv.append(button)
      
     
      
@@ -252,11 +257,11 @@ bed.setAttribute("class","item")
      view.innerHTML = "<span style='color:#8d703b'>View:</span>"+room.View;
      bed.innerHTML ="<span style='color:#8d703b'>Bed:</span>"+room.Bed;
      
-     button.innerHTML ="<a class = 'book' href ='#'>Book Now<i class='fas fa-long-arrow-alt-right'></i></a>" 
+     button.innerHTML ="<a class = 'book' href ='#'>Book Now&nbsp;<i class='fas fa-long-arrow-alt-right'></i></a>" 
 
 
      specifications.append(max,size,view,bed)
-     div.append(img,name,costdiv,specifications,line,button)
+     div.append(img,name,costdiv,specifications,line,bookdiv)
 
       document.querySelector('.rooms-div').append(div)
      
@@ -265,6 +270,28 @@ bed.setAttribute("class","item")
  } )
 }
  appendRooms(rooms)
+
+
+
+ //Start of animation
+const cards = document.querySelectorAll(".animate");
+const options = {
+  // rootMargin: "0px 0px 50% 0px",
+  threshold: 0.5,
+};
+const socialObserver = new IntersectionObserver((entries) => {
+  console.log(entries);
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.style.animation = "transitionIn 0.75s ease-out";
+      entry.target.style.opacity = "1";
+    }
+  });
+}, options);
+cards.forEach((card) => {
+  socialObserver.observe(card);
+});
+//end of animation
 
 
 
