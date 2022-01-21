@@ -168,22 +168,22 @@ const counters = document.querySelectorAll(".counter");
 
 
 counters.forEach((counter) => {
-  const updateCount = () => {
-    const target = +counter.getAttribute("data-target");
-    const count = +counter.innerText;
+const updateCount = () => {
+  const target = +counter.getAttribute("data-target");
+  const count = +counter.innerText;
 
-    const inc = target / 100;
-    console.log(count,target);
-    if (count < target) {
-      counter.innerText = count+inc;
-      setTimeout(updateCount,50);
-      
-    }
-    else{
-      count.innerText = target;
-    }
+  const inc = target / 100;
+  console.log(count,target);
+  if (count < target) {
+    counter.innerText = count+inc;
+    setTimeout(updateCount,50);
+    
   }
-  updateCount(); // start the timeout
+  else{
+    count.innerText = target;
+  }
+}
+updateCount(); // start the timeout
 });
 
 // end of counter
