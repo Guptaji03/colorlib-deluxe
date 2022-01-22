@@ -1,0 +1,226 @@
+
+#restaurant{
+    display: flex;
+    /* width: 60%; */
+    /* margin: 0px auto; */
+    justify-content: center;
+    overflow-x: hidden;
+}
+img{
+    width: 80%;
+    height: 639px;
+    object-fit: cover;
+}
+#foodlove{
+    margin-top: 5%;
+    width: 35%;
+}
+
+.modeltext{
+    margin-top: 3%;
+    display: block;
+    /* width: 60%; */
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: gray;
+}
+.dulltext{
+    font-size: 1.4rem;
+}
+.modelhead{
+    color: black;
+    font-weight: 500;
+    font-family: "Playfair Display";
+    font-size: 3.9rem;
+    margin-bottom: 10%;
+}
+.shifted{
+    margin-left: 10%;
+}
+/*Menu text*/
+.menu{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-family: "Playfair Display";
+}
+.menutext{
+    font-weight: 200;
+    font-size: 4.3rem;
+    margin-bottom: 18px;
+}
+.menuline{
+    margin: 0px auto;
+    width: 150px;
+    border-bottom: 2px solid #8d703b;
+    margin-bottom: 6px;
+}
+.mline{
+    width: 120px;
+}
+/*Food*/
+.foodimage{
+    width: 105px;
+    height: 105px;
+    border-radius: 100%;
+    background-image: url("../asset/cake.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.foodflex{
+    display: flex;
+    margin-bottom: 7%;
+    gap: 3%;
+}
+.foodhead{
+    font-family: "Playfair Display";
+    font-size: 2.8rem;
+    font-weight: 200;
+    margin-bottom: -10px;
+}
+.foodbody{
+    font-size: 1.45rem;
+    color: grey;
+}
+.foodtext{
+    width: 80%;
+    margin-top: 0.5%;
+    /* border: 1px solid black; */
+}
+#food-holder{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+.fline{
+    width: 8%;
+    position: relative;
+    left: 79%;
+    top: -10px;
+    border-bottom: 0.2px dashed;
+}
+.f2{
+    width: 30%;
+    left: 57%;
+}
+
+.amt{
+    color: #8d703b;
+    font-family: 'Poppins';
+    position: relative;
+    font-size: 2.3rem;
+    left: 90%;
+    top: -40px;
+    margin-left: -10px;
+}
+.sm{
+
+}
+
+
+@media (max-width: 1244px){
+    #restaurant{
+        gap: 30%;
+    }
+    img{
+        height: 800px;
+        width: 350px;
+    }
+    .foodlove{
+        margin-top: 10%;
+    }
+    #food-holder{
+        width: 100%;
+        gap: 30px;
+    }
+    .wrapper{
+        width: 40%;
+    }
+    .foodhead{
+        font-size: 2.3rem;
+        margin-bottom: 10px;
+    }
+    .fline{
+        left: 60%;
+    }
+    .amt{
+        font-size: 2.2rem;
+        left: 80%;
+    }
+    .f2{
+        width: 6%;
+        top: -2px;
+        left: 78%;
+        
+    }
+    .sm{
+        top: -33px;
+        left: 90%;
+    }
+}
+@media (max-width: 760px){
+
+    #restaurant{
+        flex-direction: column;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        height: 350px;
+    }
+    #foodlove{
+        width: 90%;
+        padding: 0px 20px;
+        align-self: center;
+        margin-top: 50px;
+    }
+
+    .modeltext{
+        margin: 0px;
+        margin-top: 25px;
+    }
+    .modelhead{
+        margin-bottom: 40px;
+        font-size: 2.65rem;
+    }
+    .wrapper{
+        width: 85%;
+        /* align-content: center; */
+    }
+    #food-holder{
+        margin-top: 90px;
+        width: 98%;
+    }
+    .foodflex{
+        gap: 10px;
+    }
+    .fline{
+        width: 15%;
+        position: relative;
+        left: 70%;
+        top: -10px;
+        border-bottom: 0.2px dashed;
+    }
+    .amt{
+        color: #8d703b;
+        font-family: 'Poppins';
+        position: relative;
+        left: 90%;
+        top: -40px;
+    }
+    .f2{
+        width: 9%;
+        left: 75%;
+    }
+    .menutext{
+        font-size: 3.6rem;
+        margin-top: 160px;
+    }
+
+
+}
+
+
