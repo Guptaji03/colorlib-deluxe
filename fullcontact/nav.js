@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel ="stylesheet" href="nav.css">
-    <script src = "https://kit.fontawesome.com/afc47601c9.js" crossorigin = "anonymous"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-</head>
-<body>
+document.write(
+    `
     <header class = "m-navheader">
       <div class="mnav-container">
           <nav class="m-nav">
@@ -43,21 +30,13 @@
           </nav>
       </div>
   </header>
-  <section class="m-headimg">
-    <!-- <img src = "https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp" class = "img"/> -->
-  </section>
-  <section class="demo-content"></section>
-
  
 
-    
-</body>
-</html>
-
-<script>
-    window.addEventListener('scroll', function () {
-        let header = document.querySelector('header');
-        let windowPosition = window.scrollY > 0;
-        header.classList.toggle('scrolling-active', windowPosition);
-    })
-</script>
+   
+    `
+)
+window.addEventListener('scroll', function () {
+    let header = document.querySelector('header');
+    let windowPosition = window.scrollY > 0;
+    header.classList.toggle('scrolling-active', windowPosition);
+})
