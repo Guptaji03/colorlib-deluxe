@@ -1,16 +1,15 @@
 
-/* *,
+*,
 *::before,
 *::after{
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
-} */ 
+}
 
 html{
     font-family: "Poppins",sans-serif;
     /* font-size: 10px; */
-    /* commenting font size */
 }
 
 .m-navheader{
@@ -26,12 +25,12 @@ html{
     width: 100%;
     max-width: 120rem;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 5.5rem;
 }
 
 .m-nav{
     width: 100%;
-    height: 10rem;
+    height: 7rem;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -42,20 +41,16 @@ html{
 .m-nav a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
-    font-size: 18px;
-    /* change 12 to 18px */
+    font-size: 14px;
 }
 .m-nav a:hover{
     color: white;
 }
 
 .m-nav .m-logo{
-    font-size: 1.2rem;
-    letter-spacing: .5px;
-    /* change 2 rem to 1.2 and adding letter space */
-    font-weight: bold;
-    padding-left: 6%;
-/* change 1 to 6% */
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 1%;
     color:white;
 }
 
@@ -63,11 +58,10 @@ html{
     list-style: none;
     display: flex;
     margin-right: auto;
-    margin-left:29%;
-    /* change 50% to 29% */
+    margin-left:28%;
     overflow: hidden;
-    padding-top:20px;
-    padding-right: 50px;
+    padding-top: 20px;
+    padding-right: 80px;
 }
 
 .m-nav-link{
@@ -119,30 +113,27 @@ html{
 }
 
 .scrolling-active .m-nav{
-    height: 4rem;
-    background-color: white;
+    height: 3rem;
 }
 
 .scrolling-active .m-nav a{
     color: #313131;
-    background-color: white;
     
 }
 
 
 .scrolling-active .m-nav-link::after{
     background-color: #313131;
-    background-color: white;
 }
 
 /*Apply styles after scroll end*/
 
 
-/* Hero Demo Content */
- .m-headimg{
+/* Hero Demo Content*/
+.m-headimg{
     width: 100%;
     height: 100vh;
-     background: url("https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp") center no-repeat; 
+    background: url("https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp") center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -165,6 +156,22 @@ html{
 /* Hero end*/
 
 @media screen and (max-width:991px){
+
+    .scrolling-active{
+        background-color: #fff;
+        box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    }
+    .scrolling-active .m-nav{
+        background: white;
+        color:black;
+    }
+    .scrolling-active .m-nav-list{
+        background: white;
+        color:black;
+    }
+    .scrolling-active .m-nav-link::after{
+        background-color: white;
+    }
     
     .mnav-container{
         padding:0;
@@ -177,7 +184,7 @@ html{
         background: black;
         color:white;
         margin:0 ;
-        height:4rem;
+        height:6.6rem;
        
         
         
@@ -210,13 +217,12 @@ html{
         flex-direction: column;
         width:100%;
         margin:0;
-        margin-top:-3%;
+        margin-top:-8%;
         height:70%;
         justify-content: space-around;   
         padding-left: 2%;
         /* padding-top:0; */
         padding-right: 0;
-        
        
     }
    
@@ -239,4 +245,3 @@ html{
     }
     
 }
-

@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/f2db8af21a.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -22,23 +26,59 @@
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./about-footer/footer.css" />
+    <link rel="stylesheet" href="./about-footer/instagram.css" />
+    <link rel="stylesheet" href="./about-nav/nav.css" />
   </head>
   <body>
     <!-- section header -->
+    <header class="m-navheader">
+      <div class="mnav-container">
+        <nav class="m-nav">
+          <a href="index.html" class="m-logo">DELUXE</a>
+          <input type="checkbox" id="m-check" class="m-checkbtn" />
+          <label for="m-check" class="m-checkbtn"
+            >&nbsp;<i class="fas fa-bars"
+              ><span class="m-menutext">&nbsp;MENU&nbsp;</span></i
+            ></label
+          >
+          <ul class="m-nav-list">
+            <li>
+              <a href="../home/home.html" class="m-nav-link homeon">Home</a>
+            </li>
+            <li>
+              <a href="../rooms/rooms.html" class="m-nav-link">Rooms</a>
+            </li>
+            <li>
+              <a href="../restaurant/restaurant.html" class="m-nav-link">Restaurant</a>
+            </li>
+            <li>
+              <a href="./about.html" class="m-nav-link">About</a>
+            </li>
+            <li>
+              <a href="../blog/blog.html" class="m-nav-link">Blog</a>
+            </li>
+            <li>
+              <a href="../contact/contact.html" class="m-nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <!-- <section class="header">
       <h1 class="animate">About Us</h1>
     </section> -->
     <div id="site-header">
       <div class="header-nav-list">
-          <ul class="header-ul">
-              <li><a href="#">Home</a></li>
-              <li>About</li>
-          </ul>
+        <ul class="header-ul">
+          <li><a href="#">Home</a></li>
+          <li>About</li>
+        </ul>
       </div>
       <div class="header-title">
-          <h1>About Us</h1>
+        <h1>About Us</h1>
       </div>
-  </div>
+    </div>
     <!-- end of section header -->
     <!-- display numbers section -->
     <section class="disp_number">
@@ -62,7 +102,7 @@
     <!-- end of display numbers section -->
 
     <!-- Main section -->
-    <section class="main">
+    <section class="about-main">
       <div class="video-div">
         <a href="about.html">
           <div class="video-div-play-btn">
@@ -104,7 +144,7 @@
     <!-- end of Main section -->
 
     <!-- facilities section -->
-    <section class="facilities-section-container">
+    <div class="facilities-section-container">
       <div class="card-container animate">
         <div class="container-icon">
           <span class="material-icons-outlined" style="font-size: 50px"
@@ -144,9 +184,59 @@
         <h2>Spa Suites</h2>
         <p>A small river named Duden flows by their place and supplies.</p>
       </div>
-    </section>
+    </div>
     <!-- end of facilities section -->
 
+    <!-- instagram section -->
+    <div class="main1 animate">
+      <div class="instagram">
+        <h1>Instagram</h1>
+        <hr id="big" />
+        <hr id="small" />
+      </div>
+      <div class="images">
+        <div class="img1">
+          <!-- <img src="https://preview.colorlib.com/theme/deluxe/images/insta-1.jpg" alt="image> -->
+          <div class="insta1 icons">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="img2">
+          <div class="insta2 icons">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="img3">
+          <div class="insta3 icons">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="img4">
+          <div class="insta4 icons">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="img5">
+          <div class="insta5 icons">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of instagram section -->
+
+    <!-- script for footer -->
+<script src="./about-footer/footer.js"></script>
+    <!-- end of script for footer -->
+
+    <!-- script for navbar -->
+    <script>
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle("scrolling-active", windowPosition);
+      });
+    </script>
     <!-- script for animation -->
     <script src="./about.js"></script>
   </body>

@@ -13,6 +13,7 @@
     />
 </head>
 <body>
+  
     <header class = "m-navheader">
       <div class="mnav-container">
           <nav class="m-nav">
@@ -48,16 +49,15 @@
   </section>
   <section class="demo-content"></section>
 
- 
+  <script>
+      window.addEventListener('scroll', function () {
+          let header = document.querySelector('header');
+          let windowPosition = window.scrollY > 0;
+          header.classList.toggle('scrolling-active', windowPosition);
+      })
+  </script>
 
     
 </body>
 </html>
 
-<script>
-    window.addEventListener('scroll', function () {
-        let header = document.querySelector('header');
-        let windowPosition = window.scrollY > 0;
-        header.classList.toggle('scrolling-active', windowPosition);
-    })
-</script>
