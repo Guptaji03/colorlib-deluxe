@@ -86,6 +86,7 @@ body{
 .circle_container .circle1:hover {
     background-color: #C9AF7E ;
     color: #8D703B;
+    cursor: pointer;
 }
 .img .home{
     position: absolute;
@@ -113,6 +114,7 @@ body{
 .img .blog{
     font-size: 60px;
     color: white;
+    font-family: "Playfair Display",serif;
 }
 
 @media screen and (max-width: 767px) {
