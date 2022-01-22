@@ -58,8 +58,8 @@ html{
     list-style: none;
     display: flex;
     margin-right: auto;
-    margin-left:28%;
-    overflow: hidden;
+    margin-left: 35%;
+    /* overflow: hidden; */
     padding-top: 20px;
     padding-right: 80px;
 }

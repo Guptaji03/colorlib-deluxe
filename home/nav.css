@@ -186,11 +186,11 @@
         font-size: 20px;
     }
     .m-nav .m-logo{
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: bold;
         padding-left: 2%;
     }
-    .m-menutext{
+    /* .m-menutext{
         font-size: 25px;
-    }
+    } */
 }
