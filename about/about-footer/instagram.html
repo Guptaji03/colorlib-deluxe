@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+   
+    <link
+   href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
+   rel="stylesheet"
+ />
+ <link rel="stylesheet" href="instagram.css">
+ <script src="https://kit.fontawesome.com/f2db8af21a.js" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <!--------------- instagran part------------>
+    <div class="main1 animate">
+        <div class="instagram ">
+            <h1>Instagram</h1>
+              <hr id="big">
+              <hr id="small">
+        </div>
+        <div class="images">
+            
+            <div class="img1"> 
+                <!-- <img src="https://preview.colorlib.com/theme/deluxe/images/insta-1.jpg" alt="image> -->
+               <div class="insta1 icons">
+                     <i class="fab fa-instagram"></i></div>
+            </div>
+            <div class="img2"> 
+                <div class="insta2 icons">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div  class="img3">
+                <div class="insta3 icons">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="img4">
+                <div class="insta4 icons">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="img5">
+                <div class="insta5 icons">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="footer.js"></script>
+    <script>
+        function redirect() {
+           
+            location.reload()
+        }
+        //Start of animation
+    const cards = document.querySelectorAll(".animate");
+    
+    const options = {
+      // rootMargin: "0px 0px 50% 0px",
+      threshold: 0.5,
+    };
+    const socialObserver = new IntersectionObserver((entries) => {
+      console.log(entries);
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          entry.target.style.animation = "transitionIn 0.75s ease-out";
+          entry.target.style.opacity = "1";
+        }
+      });
+    }, options);
+    
+    cards.forEach((card) => {
+      socialObserver.observe(card);
+    });
+    //end of animation
+    
+    </script>
+</body>
+</html>

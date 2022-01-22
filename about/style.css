@@ -53,7 +53,7 @@ body {
   margin-top: -20px;
 }
 
-.main {
+.about-main {
   display: flex;
   justify-content: center;
   width: 90%;
@@ -180,7 +180,7 @@ a {
     height: max-content;
     padding: 15% 0%;
   }
-  .main {
+  .about-main {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -225,6 +225,7 @@ a {
 
   .facilities-section-container {
     flex-direction: column;
+    height: auto;
   }
   .card-container {
     margin-bottom: 4rem;
@@ -241,7 +242,7 @@ a {
   body > section.facilities-section-container > div:nth-child(4) > h2 {
     margin-bottom: 41%;
   }
-  body > section.main > div.video-div {
+  body > section.about-main > div.video-div {
     min-width: 350px;
   }
 }
