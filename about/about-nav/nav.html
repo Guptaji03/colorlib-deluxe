@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="nav.css">
+    <script src = "https://kit.fontawesome.com/afc47601c9.js" crossorigin = "anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  
+    <header class = "m-navheader">
+      <div class="mnav-container">
+          <nav class="m-nav">
+              <a href="index.html" class="m-logo">DELUXE</a>
+              <input type = "checkbox" id = "m-check" class="m-checkbtn">
+              <label for="m-check" class="m-checkbtn">&nbsp;<i class = "fas fa-bars"><span class ="m-menutext">&nbsp;MENU&nbsp;</span></i></label>
+              <ul class="m-nav-list">
+                  <li>
+                      <a href="index.html" class="m-nav-link homeon">Home</a>
+                  </li>
+                  <li>
+                      <a href="rooms.html" class="m-nav-link">Rooms</a>
+                  </li>
+                  <li>
+                      <a href="#" class="m-nav-link">Restaurant</a>
+                  </li>
+                  <li>
+                      <a href="#" class="m-nav-link">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="m-nav-link">Blog</a>
+                </li>
+                  <li>
+                      <a href="#" class="m-nav-link">Contact</a>
+                  </li>
+              </ul>
+              
+          </nav>
+      </div>
+  </header>
+  <section class="m-headimg">
+    <!-- <img src = "https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp" class = "img"/> -->
+  </section>
+  <section class="demo-content"></section>
+
+  <script>
+      window.addEventListener('scroll', function () {
+          let header = document.querySelector('header');
+          let windowPosition = window.scrollY > 0;
+          header.classList.toggle('scrolling-active', windowPosition);
+      })
+  </script>
+
+    
+</body>
+</html>
+
