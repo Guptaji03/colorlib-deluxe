@@ -168,10 +168,25 @@ html{
         background: black;
         color:white;
         margin:0 ;
-        height:6.6rem;
-       
+        height:6.6rem;    
         
-        
+    }
+    .scrolling-active{
+        background-color: #fff;
+        box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    }
+    .scrolling-active .m-nav{
+        background: white;
+        color:black;
+    }
+   
+    .scrolling-active .m-nav-list{
+        background: white;
+        color:black;
+    }
+     
+    .scrolling-active .m-nav-link::after{
+        background-color: white;
     }
    
     .m-checkbtn{
