@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+
+    <script src="https://kit.fontawesome.com/f2db8af21a.js" crossorigin="anonymous"></script>
+
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="footer.css">
+         
+    <style>
+        
+
+        
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="main">
+            <div class="col col1">
+                <h3>Deluxe Hotel</h3>
+
+                <div class="content">
+                    <div class="content-inner1">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    </div>
+                </div>
+
+                <div class="media animate">
+                    <div class="media-inner">
+                        <i class="fa fa-twitter circle"></i>
+        
+                    </div>
+                    <div class="media-inner">
+                        <i class="fa fa-facebook circle"></i>
+        
+                    </div>
+                    <div class="media-inner">
+                        <i class="fab fa-instagram"></i>
+        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col col2">
+                <h3>Useful Links</h3>
+
+                <div class="content">
+                    <div class="content-inner" onclick="redirect()"><span>Blog</span></div>
+                    <div class="content-inner" onclick="redirect()"><span>Rooms</span></div>
+                    <div class="content-inner" onclick="redirect()"><span>Amenities</span></div>
+                    <div class="content-inner" onclick="redirect()"><span>Gift Card</span></div>
+                </div>
+
+
+            </div>
+
+
+            <div class="col col3">
+                <h3>Privacy</h3>
+
+                <div class="content">
+                    <div class="content-inner" onclick="redirect()"><span>Career</span></div>
+                    <div class="content-inner" onclick="redirect()"><span>About Us</span></div>
+                    <div class="content-inner" onclick="redirect()"><span>Contact Us</span></div>
+                    <div class="content-inner" onclick="redirect()"><span>Services</span></div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col col4">
+
+                <h3>Have a Questions?</h3>
+
+                <div class="content">
+                    <div class="content-inner1">
+                        <div class="icon">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="content-inner-inner add">
+                            203 Fake St. Mountain View, San Francisco, California, USA
+                        </div>
+                    </div>
+                    <div class="content-inner1">
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="content-inner-inner cont">
+                            +2 392 3929 210
+                        
+                        </div>
+                    </div>
+                    <br>
+                    <div class="content-inner1">
+                        <div class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="content-inner-inner ema">
+                            info@yourdomain.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            Copyright ©2022 All rights reserved | This template is made with <i class="fas fa-heart"></i>
+            by <a href="">Colorlib</a> 
+        </div>
+    </footer>
+</body>
+<script>
+    function redirect() {
+       
+        location.reload()
+    }
+    //Start of animation
+const cards = document.querySelectorAll(".animate");
+
+const options = {
+  // rootMargin: "0px 0px 50% 0px",
+  threshold: 0.5,
+};
+const socialObserver = new IntersectionObserver((entries) => {
+  console.log(entries);
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.style.animation = "transitionIn 0.75s ease-out";
+      entry.target.style.opacity = "1";
+    }
+  });
+}, options);
+
+cards.forEach((card) => {
+  socialObserver.observe(card);
+});
+//end of animation
+
+</script>
+</html>
+
+

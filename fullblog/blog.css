@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.img{
+    background-image: url(https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp);
+    height: 360px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    }
+
+    .animate{
+        opacity: 0;
+      }
+      @keyframes transitionIn {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+
+
+    .cards_container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /* padding: 125px; */
+        margin: 7%;
+        /* width: 100%; */
+        gap: 30px;
+        row-gap: 50px;
+    }
+ .image{
+     height: 275px;
+     width: 100%;
+     
+ }   
+
+ .cards{
+     display: grid;
+     gap: 15px;
+     /* width: 285px; */
+  box-sizing: border-box;
+ }
+ .text{
+     font-size:20px;
+ }
+ .comment{
+     color: rgb(206, 203, 203);
+ }
+ .text :hover{
+     color: #8D703B;
+ }
+.circle_container{
+    display: flex;
+  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  /* margin: 20px; */
+  margin-bottom: 7%;
+   
+}
+.circle1{
+    color: #C9AF7E;
+    box-sizing: border-box;
+    /* padding: 7px; */
+    display: grid;
+    place-items: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #C9AF7E ;
+    border-radius: 50% 50%;
+}
+.circle_container .circle1:hover {
+    background-color: #C9AF7E ;
+    color: #8D703B;
+}
+.img .home{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+
+}
+.img .home .two{
+    font-size: smaller;
+    width: fit-content;
+    display: grid;
+    justify-content: center;
+     gap: 20px;
+     grid-template-columns: repeat(2,1fr);
+    color: white;
+    place-items: center;
+    padding-left: 20px;
+    margin-bottom: 20px;
+   /* border-bottom: 1px solid rgba(255, 255, 255, 0.39); */
+   
+    
+   
+}
+.img .blog{
+    font-size: 60px;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+
+    .cards_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* padding: 125px; */
+        margin: 10%;
+        /* width: 100%; */
+        gap: 30px;
+        row-gap: 50px;
+    }
+}
