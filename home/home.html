@@ -21,14 +21,67 @@
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
-    /><script src="https://kit.fontawesome.com/f2db8af21a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="./instagram.css">
+    />
+    <script
+      src="https://kit.fontawesome.com/f2db8af21a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./instagram.css" />
     <link rel="stylesheet" href="./nav.css" />
   </head>
 
   <body>
-    <div class="background-carousel change-bg"></div>
+    <div id="cf">
+      <div class="holder1">
+        <img class="img-top" src="./img/xbg_2.webp" />
+      </div>
+
+      <div class="holder">
+        <img class="img-bottom" src="./img/xbg_1.webp" />
+      </div>
+      <div class="home-text">
+        <h2 class="maintext">Welcome To Deluxe</h2>
+        <p class="maindesc">Hotels and Resorts</p>
+      </div>
+      <!-- <div class="formholder">
+        <form class="values">
+            <section class="info">
+                <p>check -in date</p>
+                <input type="text" placeholder="Check-in date">
+            </section>
+            <section class="info">
+                <p>check -out date</p>
+                <input type="text" placeholder="Check-in date">
+            </section>
+            <section class="info sinfo">
+                <p>Room</p>
+                <select>
+                    <option>Suite</option>
+                    <option>Family Room</option>
+                    <option>Deluxe Room</option>
+                    <option>Superior Room</option>
+                    <option>Luxury Room</option>
+                </select>
+            </section>
+            <section class="info sinfo">
+                <p>Customer</p>
+                <select>
+                    <option>1 Adult</option>
+                    <option>2 Adult</option>
+                    <option>3 Adult</option>
+                    <option>4 Adult</option>
+                    <option>5 Adult</option>
+                    <option>6 Adult</option>
+                    <option>7 Adult</option>
+                </select>
+            </section>
+            <section class="info btn">
+                <input type="submit" value="check availability">
+            </section>
+        </form>
+    </div> -->
+    </div>
     <!-- navigaton -->
     <script src="./nav.js"></script>
     <!-- Main section -->
@@ -225,13 +278,31 @@
           <p>Dec 6, 2018 Admin &nbsp; <i class="fas fa-comment-alt"></i> 3</p>
         </div>
       </div>
-
     </div>
     <!-- End of Blogs section -->
-<!-- instagram section -->
+    <!-- instagram section -->
     <script src="./instagram.js"></script>
     <!-- footer section -->
     <!-- <script src="./footer.js"></script> -->
   </body>
   <script src="./home.js"></script>
+  <script>
+    var head = document.querySelector(".maintext");
+    var paragraph = document.querySelector(".maindesc");
+    var headArray = ["Welcome To Deluxe", "Enjoy Luxury Experience"];
+    var pArray = ["Hotels & Resorts", "Join with us"];
+    var number = 0;
+
+    function randomtext() {
+      setTimeout(randomtext, 6000);
+      if (number == 0) {
+        number = 1;
+      } else {
+        number = 0;
+      }
+      head.innerHTML = headArray[number];
+      paragraph.innerHTML = `<hr class="one"> ${pArray[number]} <hr class = "two">`;
+    }
+    setTimeout(randomtext,3000)
+  </script>
 </html>

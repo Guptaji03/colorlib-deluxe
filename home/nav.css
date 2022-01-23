@@ -184,13 +184,16 @@
     }
     .m-checkbtn{
         font-size: 20px;
+        margin-right: 0;
     }
     .m-nav .m-logo{
         font-size: 1.2rem;
         font-weight: bold;
         padding-left: 2%;
     }
-    /* .m-menutext{
-        font-size: 25px;
-    } */
+    .m-menutext{
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-left: 2%;
+    }
 }

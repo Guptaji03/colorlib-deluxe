@@ -147,7 +147,7 @@ const options = {
   threshold: 0.5,
 };
 const socialObserver = new IntersectionObserver((entries) => {
-  console.log(entries);
+
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
       entry.target.style.animation = "transitionIn 0.75s ease-out";
@@ -173,7 +173,7 @@ const updateCount = () => {
   const count = +counter.innerText;
 
   const inc = target / 100;
-  console.log(count,target);
+
   if (count < target) {
     counter.innerText = count+inc;
     setTimeout(updateCount,50);
@@ -188,22 +188,22 @@ updateCount(); // start the timeout
 
 // end of counter
 
-//Start of animation_counter
-const counter_numbers = document.querySelectorAll(".animate_counter");
+// //Start of animation_counter
+// const counter_numbers = document.querySelectorAll(".animate_counter");
 
 
-const counterObserver = new IntersectionObserver((entries) => {
-  console.log(entries);
-  entries.forEach((entry) => {
-    if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = "transitionIn 0.75s ease-out";
-      entry.target.style.opacity = "1";
-      startCounter();
-    }
-  });
-}, options);
+// const counterObserver = new IntersectionObserver((entries) => {
 
-counter_numbers.forEach((counter) => {
-  counterObserver.observe(counter);
-});
+//   entries.forEach((entry) => {
+//     if (entry.intersectionRatio > 0) {
+//       entry.target.style.animation = "transitionIn 0.75s ease-out";
+//       entry.target.style.opacity = "1";
+//       startCounter();
+//     }
+//   });
+// }, options);
+
+// counter_numbers.forEach((counter) => {
+//   counterObserver.observe(counter);
+// });
 //end of animation_counter
