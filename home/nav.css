@@ -1,4 +1,5 @@
 .m-navheader{
+
     width: 100%;
     position: fixed;
     top: 0;
@@ -188,7 +189,7 @@
     .m-nav .m-logo{
         font-size: 1.2rem;
         font-weight: bold;
-        padding-left: 2%;
+        padding-left: 4%;
     }
     /* .m-menutext{
         font-size: 25px;

@@ -55,4 +55,10 @@
     text-decoration: none;
     color: white;
   }
+
+  @media screen and (max-width:787px) {
+    .header-title h1 {
+      font-size: 4.8em;
+    }   
+  }
   

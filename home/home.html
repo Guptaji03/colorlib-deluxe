@@ -21,14 +21,361 @@
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
-    /><script src="https://kit.fontawesome.com/f2db8af21a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="./instagram.css">
+    />
+    <script
+      src="https://kit.fontawesome.com/f2db8af21a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./instagram.css" />
     <link rel="stylesheet" href="./nav.css" />
   </head>
 
+  <style>
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+.maincontainer{
+    height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 0%;
+}
+/* html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+} */
+
+.holder {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 350px;
+    color: white;
+}
+
+.maintext {
+    font-family: 'Playfair Display';
+    font-size: 90px;
+    color: white;
+    font-weight: 300;
+}
+
+.maindesc {
+    text-transform: uppercase;
+    /* font-size: large; */
+    font-weight: 100;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+.values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info>p {
+    font-family: 'Poppins';
+    color: #8d703b;
+}
+
+.values {
+    position: relative;
+    top: 400px;
+    width: 100%;
+}
+
+.info {
+    /* border: 1px solid black; */
+    height: 150px;
+    width: 300px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.info>p {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    text-transform: uppercase;
+    /* width: 50px; */
+    font-size: 20px;
+    font-weight: 600;
+}
+.sinfo{
+    width: 200px;
+}
+.btn{
+    width: 250px;
+}
+
+input[type="text"] {
+    position: relative;
+    top: 40px;
+    left: 10px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: white;
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    outline: none;
+}
+
+select {
+    position: relative;
+    top: 40px;
+    left: 10px;
+    height: 40px;
+    width: 150px;
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    outline: none;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.sinfo>p {
+    position: relative;
+    top: 20px;
+    left: 10px;
+
+}
+
+input[type="submit"]{
+        width: 100%;
+        height: 100%;
+        background-color: #8d703b;
+        color: white;
+        font-size: 18px;
+        border: 1px solid #8d703b;
+        text-transform: uppercase;
+    }
+    input[type = "submit"]:hover{
+        background-color: black;
+        color: white;
+    }
+
+
+/*For mobile devices*/
+@media (max-width: 800px) {
+    .maintext {
+        font-size: 50px;
+    }
+
+    .maindesc {
+        font-size: 25px;
+    }
+
+    hr {
+        width: 100px;
+        background-color: whitesmoke;
+    }
+
+    
+
+    .values {
+        position: absolute;
+        top: 800px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        height: 120px;
+        margin: 10px;
+        padding-left: 10px;
+    }
+
+    .info>p {
+        position: relative;
+        top: 25px;
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #8d703b;
+
+    }
+
+    input,
+    select {
+        position: relative;
+        top: 35px;
+        height: 30px;
+        width: 90%;
+        background-color: white;
+        outline: none;
+        border: 1px solid white;
+        font-family: 'Playfair Display';
+        font-size: 25px;
+    }
+
+    input[type="submit"] {
+        text-transform: uppercase;
+        font-family: 'Poppins';
+        background-color: #8d703b;
+        width: 100%;
+        height: 70px;
+        font-size: large;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+/*End of mobile screen*/
+
+/*Medium and tablet size*/
+@media (min-width: 850px) and (max-width: 1200px) {
+    .maintext {
+        font-size: 55px;
+    }
+
+    .maindesc {
+        font-size: 28px;
+        font-weight: 700;
+        color: rgb(153, 153, 153);
+    }
+
+   
+
+    
+
+    .values {
+        position: relative;
+        top: 380px;
+        width: 100%;
+    }
+
+    .info {
+        /* border: 1px solid black; */
+        height: 130px;
+        width: 160px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        background-color: white;
+    }
+
+    .info>p {
+        position: relative;
+        top: 20px;
+        left: 10px;
+        text-transform: uppercase;
+        width: 50px;
+        font-size: 13px;
+        font-weight: 800;
+    }
+
+    input[type="text"] {
+        position: relative;
+        top: 30px;
+        left: 10px;
+        width: 130px;
+        height: 20px;
+        border: 1px solid white;
+        background-color: white;
+        font-family: 'Playfair Display';
+        font-size: 15px;
+    }
+
+    select {
+        position: relative;
+        top: 70px;
+        left: 10px;
+        height: 20px;
+        width: 130px;
+        font-family: 'Playfair Display';
+        font-size: 15px;
+        outline: none;
+        border: 1px solid white;
+        background-color: white;
+    }
+
+    .sinfo>p {
+        position: relative;
+        top: 40px;
+        left: 10px;
+
+    }
+
+    .btn {
+        /* width:75%;*/
+        height: 55px;
+        flex: 0 1 80%;
+        position: relative;
+        top: -8px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        height: 100%;
+        background-color: #8d703b;
+        color: white;
+        font-size: 18px;
+        border: 1px solid #8d703b;
+        text-transform: uppercase;
+    }
+
+}
+   
+  </style>
+
   <body>
-    <div class="background-carousel change-bg"></div>
+
+    <div class="maincontainer">
+      <div class="holder">
+          <h2 class="maintext"></h2>
+          <p class="maindesc"></p>
+      </div>
+      <div class="formholder">
+          <form class="values">
+              <section class="info">
+                  <p>check -in date</p>
+                  <input type="text" placeholder="Check-in date">
+              </section>
+              <section class="info">
+                  <p>check -out date</p>
+                  <input type="text" placeholder="Check-in date">
+              </section>
+              <section class="info sinfo">
+                  <p>Room</p>
+                  <select>
+                      <option>Suite</option>
+                      <option>Family Room</option>
+                      <option>Deluxe Room</option>
+                      <option>Superior Room</option>
+                      <option>Luxury Room</option>
+                  </select>
+              </section>
+              <section class="info sinfo">
+                  <p>Customer</p>
+                  <select>
+                      <option>1 Adult</option>
+                      <option>2 Adult</option>
+                      <option>3 Adult</option>
+                      <option>4 Adult</option>
+                      <option>5 Adult</option>
+                      <option>6 Adult</option>
+                      <option>7 Adult</option>
+                  </select>
+              </section>
+              <section class="info btn">
+                  <input type="submit" value="check availability">
+              </section>
+          </form>
+      </div>
+  </div>
+    
     <!-- navigaton -->
     <script src="./nav.js"></script>
     <!-- Main section -->
@@ -225,13 +572,40 @@
           <p>Dec 6, 2018 Admin &nbsp; <i class="fas fa-comment-alt"></i> 3</p>
         </div>
       </div>
-
     </div>
     <!-- End of Blogs section -->
-<!-- instagram section -->
+    <!-- instagram section -->
     <script src="./instagram.js"></script>
     <!-- footer section -->
     <!-- <script src="./footer.js"></script> -->
   </body>
+  <script>
+    
+    var head = document.querySelector(".maintext");
+    var paragraph = document.querySelector(".maindesc");
+    var back = document.querySelector(".maincontainer");
+
+    var headArray = ["Welcome To Deluxe", "Enjoy Luxury Experience"]
+    var pArray = ["Hotels & Resorts", "Join with us"]
+    var number = 0;
+    function randomNumber() {
+        if (number === 0) {
+            number = 1;
+            back.style.backgroundImage = "url('https://preview.colorlib.com/theme/deluxe/images/xbg_2.jpg.pagespeed.ic.e-nDkaGJ3O.webp')"
+
+        }
+        else {
+            number = 0;
+            back.style.backgroundImage = "url('https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp')"
+        }
+        head.innerHTML = headArray[number];
+        paragraph.innerHTML = ` ${pArray[number]} `;
+
+        console.log(number)
+    }
+    // randomNumber();
+    setInterval(randomNumber, 3000);
+
+  </script>
   <script src="./home.js"></script>
 </html>

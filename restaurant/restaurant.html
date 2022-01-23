@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/restaurant.css">
     <link rel="stylesheet" href="css/instagram.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../about/about-footer/footer.css">
     <link rel="stylesheet" href="css/animation.css">
     <script src="footer.js"></script>
 </head>
@@ -21,10 +21,10 @@
 <body>
 
     <!-- This is the navbar -->
-    <header class="m-navheader">
+     <header class="m-navheader"> 
         <div class="mnav-container">
             <nav class="m-nav">
-                <a href="index.html" class="m-logo">DELUXE</a>
+                <a href="../home/home.html" class="m-logo">DELUXE</a>
                 <input type="checkbox" id="m-check" class="m-checkbtn" />
                 <label for="m-check" class="m-checkbtn">&nbsp;<i class="fas fa-bars"><span
                             class="m-menutext">&nbsp;MENU&nbsp;</span></i></label>
@@ -36,24 +36,26 @@
                         <a href="../rooms/rooms.html" class="m-nav-link">Rooms</a>
                     </li>
                     <li>
-                        <a href="../restaurant/restaurant.html" class="m-nav-link">Restaurant</a>
+                        <a href="./restaurant.html" class="m-nav-link">Restaurant</a>
                     </li>
                     <li>
-                        <a href="./about.html" class="m-nav-link">About</a>
+                        <a href="../about/about.html" class="m-nav-link">About</a>
                     </li>
                     <li>
-                        <a href="../blog/blog.html" class="m-nav-link">Blog</a>
+                        <a href="../fullblog/blog.html" class="m-nav-link">Blog</a>
                     </li>
                     <li>
-                        <a href="../contact/contact.html" class="m-nav-link">Contact</a>
+                        <a href="../fullcontact/contact.html" class="m-nav-link">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> 
     <!-- <section class="header">
         <h1 class="animate">About Us</h1>
       </section> -->
+
+      <!-- nav.js -->
     <div id="site-header">
         <div class="header-nav-list">
             <ul class="header-ul animate">
@@ -236,7 +238,7 @@
     <!--
         Footer
     -->
-    <footer>
+    <!-- <footer>
         <div class="main animate">
             <div class="col col1">
                 <h3>Deluxe Hotel</h3>
@@ -332,12 +334,18 @@
             Copyright ©2022 All rights reserved | This template is made with <i class="fas fa-heart"></i>
             by <a href="">Colorlib</a> 
         </div>
-    </footer>
-   
+    </footer> -->
+   <script src="../about/about-footer/footer.js"></script>
 </body>
 
 </html>
 <script>
+
+window.addEventListener('scroll', function () {
+    let header = document.querySelector('header');
+    let windowPosition = window.scrollY > 0;
+    header.classList.toggle('scrolling-active', windowPosition);
+})
     function redirect() {
        
         location.reload()

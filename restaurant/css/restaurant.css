@@ -88,12 +88,12 @@ img{
     /* border: 1px solid black; */
 }
 #food-holder{
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2%;
+    gap: 5%;
 }
 .fline{
     width: 8%;
