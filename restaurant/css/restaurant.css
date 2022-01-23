@@ -123,7 +123,7 @@ img{
 
 @media (max-width: 1244px){
     #restaurant{
-        gap: 30%;
+        gap: 10%;
     }
     img{
         height: 800px;
