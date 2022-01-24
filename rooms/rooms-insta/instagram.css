@@ -167,6 +167,9 @@ body .instagram {
 }
 
 @media screen and (max-width: 767px) {
+  .main1{
+    margin-top: 50%;
+  }
   .images {
     display: flex;
     margin-top: 37px;
