@@ -58,7 +58,7 @@ html {
   list-style: none;
   display: flex;
   margin-right: auto;
-  margin-left: 50%;
+  margin-left: 40%;
   overflow: hidden;
   padding-top: 20px;
   padding-right: 50px;
@@ -88,6 +88,7 @@ html {
 
 .m-menutext {
   font-family: "Poppins", sans-serif;
+  color:white
 }
 
 #m-check {
@@ -127,7 +128,7 @@ html {
 /*Apply styles after scroll end*/
 
 /* Hero Demo Content*/
-.m-headimg {
+/* .m-headimg {
   width: 100%;
   height: 100vh;
   background: url("https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp")
@@ -150,12 +151,19 @@ html {
   width: 100%;
   height: 200vh;
   background-color: #fff;
-}
+} */
 /* Hero end*/
+
+@media screen and (max-width:1170px){
+  .m-nav-list{
+      margin-left:30%
+  }
+}
 
 @media screen and (max-width: 991px) {
   .mnav-container {
     padding: 0;
+    margin:0;
     /* height:10%; */
   }
 
@@ -163,10 +171,11 @@ html {
     background: black;
     color: white;
     margin: 0;
-    height: 6.6rem;
+    height: 6.8rem;
   }
   .scrolling-active {
     background-color: #fff;
+    height:6.8rem;
     box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
   }
   .scrolling-active .m-nav {
@@ -177,6 +186,7 @@ html {
   .scrolling-active .m-nav-list {
     background: white;
     color: black;
+    
   }
 
   .scrolling-active .m-nav-link::after {
@@ -195,6 +205,7 @@ html {
     text-align: left;
     background: black;
     transition: top 0.1s;
+    font-size: 10px;
     /* top:0; */
   }
 
@@ -208,12 +219,13 @@ html {
     flex-direction: column;
     width: 100%;
     margin: 0;
-    margin-top: -3%;
-    height: 70%;
+    margin-top: -2%;
+    height: 60%;
     justify-content: space-around;
     padding-left: 2%;
     /* padding-top:0; */
     padding-right: 0;
+    
   }
 
   .m-nav-link {
@@ -223,7 +235,7 @@ html {
     color: gray;
   }
   .m-nav a {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .m-checkbtn {
     font-size: 20px;
@@ -233,4 +245,7 @@ html {
     font-weight: bold;
     padding-left: 2%;
   }
+  .m-menutext{
+    font-size: 25px;
+}
 }
