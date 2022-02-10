@@ -29,353 +29,177 @@
     <link rel="stylesheet" href="./footer.css" />
     <link rel="stylesheet" href="./instagram.css" />
     <link rel="stylesheet" href="./nav.css" />
-  </head>
-
-  <style>
-/* *{
-    margin: 0px;
-    padding: 0px;
-} */
-.maincontainer{
-    height: 900px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    margin-top: 0%;
-}
-/* html,
-body {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-} */
-
-.holder {
-    width: 80%;
-    height: 200px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    top: 350px;
-    color: white;
-}
-
-.maintext {
-    font-family: 'Playfair Display';
-    font-size: 90px;
-    color: white;
-    font-weight: 300;
-}
-
-.maindesc {
-    text-transform: uppercase;
-    /* font-size: large; */
-    font-weight: 100;
-    font-family: 'Poppins';
-    font-size: 30px;
-}
-
-.values {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.info>p {
-    font-family: 'Poppins';
-    color: #8d703b;
-}
-
-.values {
-    position: relative;
-    top: 400px;
-    width: 100%;
-}
-
-.info {
-    /* border: 1px solid black; */
-    height: 150px;
-    width: 300px;
-    margin-left: 10px;
-    background-color: white;
-}
-
-.info>p {
-    position: relative;
-    top: 20px;
-    left: 10px;
-    text-transform: uppercase;
-    /* width: 50px; */
-    font-size: 20px;
-    font-weight: 600;
-}
-.sinfo{
-    width: 200px;
-}
-.btn{
-    width: 250px;
-}
-
-input[type="text"] {
-    position: relative;
-    top: 40px;
-    left: 10px;
-    width: 200px;
-    height: 40px;
-    border: 1px solid white;
-    background-color: white;
-    font-family: 'Playfair Display';
-    font-size: 22px;
-    outline: none;
-}
-
-select {
-    position: relative;
-    top: 40px;
-    left: 10px;
-    height: 40px;
-    width: 150px;
-    font-family: 'Playfair Display';
-    font-size: 22px;
-    outline: none;
-    border: 1px solid white;
-    background-color: white;
-}
-
-.sinfo>p {
-    position: relative;
-    top: 20px;
-    left: 10px;
-
-}
-
-input[type="submit"]{
-        width: 100%;
-        height: 100%;
-        background-color: #8d703b;
-        color: white;
-        font-size: 18px;
-        border: 1px solid #8d703b;
-        text-transform: uppercase;
-    }
-    input[type = "submit"]:hover{
-        background-color: black;
-        color: white;
-    }
 
 
-/*For mobile devices*/
-@media (max-width: 800px) {
-    .maintext {
-        font-size: 50px;
-    }
 
-    .maindesc {
+    <style>
+      .container{
+        /* z-index: 1; */
+        box-sizing: border-box;
+          display: grid;
+          grid-template-columns: repeat(5,1fr);
+          gap: 10px;
+          /* width: 90%; */
+         
+          position: absolute;
+          top: 102%;
+          margin-left: 60px;
+          
+      }
+      .container label{
         font-size: 25px;
-    }
-
-    hr {
-        width: 100px;
-        background-color: whitesmoke;
-    }
-
-    
-
-    .values {
-        position: absolute;
-        top: 800px;
-        padding: 10px;
-        width: 100%;
-    }
-
-    .info {
-        width: 100%;
-        height: 120px;
-        margin: 10px;
-        padding-left: 10px;
-    }
-
-    .info>p {
-        position: relative;
-        top: 25px;
-        font-family: 'Poppins';
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #8d703b;
-
-    }
-
-    input,
-    select {
-        position: relative;
-        top: 35px;
-        height: 30px;
-        width: 90%;
-        background-color: white;
+          color: #8D703B;
+         
+      }
+      .container input:focus,  select:focus{
         outline: none;
-        border: 1px solid white;
-        font-family: 'Playfair Display';
-        font-size: 25px;
     }
-
-    input[type="submit"] {
-        text-transform: uppercase;
-        font-family: 'Poppins';
-        background-color: #8d703b;
-        width: 100%;
-        height: 70px;
-        font-size: large;
-        color: white;
-        font-weight: 600;
-    }
-}
-
-/*End of mobile screen*/
-
-/*Medium and tablet size*/
-@media (min-width: 850px) and (max-width: 1200px) {
-    .maintext {
-        font-size: 55px;
-    }
-
-    .maindesc {
-        font-size: 28px;
-        font-weight: 700;
-        color: rgb(153, 153, 153);
-    }
-
-   
-
-    
-
-    .values {
-        position: relative;
-        top: 380px;
-        width: 100%;
-    }
-
-    .info {
-        /* border: 1px solid black; */
-        height: 130px;
-        width: 160px;
-        margin-left: 50px;
-        margin-bottom: 10px;
-        background-color: white;
-    }
-
-    .info>p {
-        position: relative;
-        top: 20px;
-        left: 10px;
-        text-transform: uppercase;
-        width: 50px;
-        font-size: 13px;
-        font-weight: 800;
-    }
-
-    input[type="text"] {
-        position: relative;
-        top: 30px;
-        left: 10px;
-        width: 130px;
-        height: 20px;
-        border: 1px solid white;
-        background-color: white;
-        font-family: 'Playfair Display';
-        font-size: 15px;
-    }
-
-    select {
-        position: relative;
-        top: 70px;
-        left: 10px;
-        height: 20px;
-        width: 130px;
-        font-family: 'Playfair Display';
-        font-size: 15px;
+  
+      .date{
         outline: none;
-        border: 1px solid white;
-        background-color: white;
-    }
-
-    .sinfo>p {
-        position: relative;
-        top: 40px;
-        left: 10px;
-
-    }
-
-    .btn {
-        /* width:75%;*/
-        height: 55px;
-        flex: 0 1 80%;
-        position: relative;
-        top: -8px;
-    }
-
-    input[type="submit"] {
-        width: 100%;
-        height: 100%;
-        background-color: #8d703b;
-        color: white;
-        font-size: 18px;
-        border: 1px solid #8d703b;
-        text-transform: uppercase;
-    }
-
-}
-   
+          font-size: 20px;
+          padding: 15px;
+          box-sizing: border-box;
+          height: 135px;
+          width: 100%;
+          background-color: white;
+      }
+     
+      .option{
+       
+          outline: none;
+          font-size: 20px;
+          padding: 15px;
+          box-sizing: border-box;
+          height: 135px;
+          width: 100%;
+          background-color: white;
+          
+      }
+      
+      .in input{
+        margin-top: 10px;
+          font-size: 25px;
+          border: 0px;
+          height: 40px;
+          width: 100%;
+         box-sizing: border-box;
+      }
+      .out input{
+       box-sizing: border-box;
+        margin-top: 10px;
+          font-size: 25px;
+          border: 0px;
+          height: 40px;
+          width: 100%;
+      }
+      
+     .submit input {
+       font-size: 20px;
+        height: 135px;
+        /* width: 220px; */
+        border: 0px;
+        padding: 20px;
+       
+     }
+     .submit :hover {
+       color: white;
+       background-color: #8D703B;
+     }
+     .ROOM{
+      margin-top: 10px;
+          font-size: 25px;
+          border: 0px;
+          height: 40px;
+          width: 90%;
+     
+     }
+      
   </style>
 
-  <body>
 
-    <div class="maincontainer">
+
+
+
+
+
+  </head>
+
+  <body>
+    <div id="cf">
+      <div class="holder1">
+        <img class="img-top" src="./img/xbg_2.webp" />
+
+      </div>
+
       <div class="holder">
-          <h2 class="maintext"></h2>
-          <p class="maindesc"></p>
+        <img class="img-bottom" src="./img/xbg_1.webp" />
       </div>
-      <div class="formholder">
-          <form class="values">
-              <section class="info">
-                  <p>check -in date</p>
-                  <input type="text" placeholder="Check-in date">
-              </section>
-              <section class="info">
-                  <p>check -out date</p>
-                  <input type="text" placeholder="Check-in date">
-              </section>
-              <section class="info sinfo">
-                  <p>Room</p>
-                  <select>
-                      <option>Suite</option>
-                      <option>Family Room</option>
-                      <option>Deluxe Room</option>
-                      <option>Superior Room</option>
-                      <option>Luxury Room</option>
-                  </select>
-              </section>
-              <section class="info sinfo">
-                  <p>Customer</p>
-                  <select>
-                      <option>1 Adult</option>
-                      <option>2 Adult</option>
-                      <option>3 Adult</option>
-                      <option>4 Adult</option>
-                      <option>5 Adult</option>
-                      <option>6 Adult</option>
-                      <option>7 Adult</option>
-                  </select>
-              </section>
-              <section class="info btn">
-                  <input type="submit" value="check availability">
-              </section>
-          </form>
+      <div class="home-text">
+        <h1 class="maintext">Welcome To Deluxe</h1>
+        <p class="maindesc">Hotels and Resorts</p>
       </div>
-  </div>
-    
+      </div>
+      <!-- work here -->
+
+
+      <div class="container">
+        <div class="in date">
+   <label >CHECK-IN DATE</label> <br>
+   <!-- <p >CHECK-IN DATE</p> <br> -->
+   <input type="text" placeholder="Check-in date" > </div>
+   <div class="out date ">
+   <label for="check-out-date">CHECK-OUT DATE</label> <br>
+   <!-- <p >CHECK-OUT DATE</p> <br> -->
+   <input type="text" placeholder="Check-out date" > </div>
+   <div class="room option">
+  <label for="ROOM">ROOM</label> <br>
+  <select name="room" class="ROOM">
+      <option value="suite">Suite</option>
+      <option value="suite">Family Room</option>
+      <option value="suite">Deluxe Room</option>
+      <option value="suite">Classic Room</option>
+      <option value="suite">Superior Room</option>
+      <option value="suite">Luxury Room</option>
+  </select>
+</div>
+<div class="age option">
+  <label for="ROOM">CUSTOMER</label> <br>
+  <select name="room" class="ROOM">
+      <option value="suite">1Adult</option>
+      <option value="suite">2Adult</option>
+      <option value="suite">3Adult</option>
+      <option value="suite">4Adult</option>
+      <option value="suite">5Adult</option>
+      <option value="suite">6Adult</option>
+  </select>
+</div>
+<div class="submit">
+  <input type="submit" value="Check Availability">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- ============================================= -->
     <!-- navigaton -->
     <script src="./nav.js"></script>
     <!-- Main section -->
@@ -579,33 +403,24 @@ input[type="submit"]{
     <!-- footer section -->
     <!-- <script src="./footer.js"></script> -->
   </body>
+  <script src="./home.js"></script>
   <script>
-    
     var head = document.querySelector(".maintext");
     var paragraph = document.querySelector(".maindesc");
-    var back = document.querySelector(".maincontainer");
-
-    var headArray = ["Welcome To Deluxe", "Enjoy Luxury Experience"]
-    var pArray = ["Hotels & Resorts", "Join with us"]
+    var headArray = ["Welcome To Deluxe", "Enjoy Luxury Experience"];
+    var pArray = ["Hotels & Resorts", "Join with us"];
     var number = 0;
-    function randomNumber() {
-        if (number === 0) {
-            number = 1;
-            back.style.backgroundImage = "url('https://preview.colorlib.com/theme/deluxe/images/xbg_2.jpg.pagespeed.ic.e-nDkaGJ3O.webp')"
 
-        }
-        else {
-            number = 0;
-            back.style.backgroundImage = "url('https://preview.colorlib.com/theme/deluxe/images/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp')"
-        }
-        head.innerHTML = headArray[number];
-        paragraph.innerHTML = ` ${pArray[number]} `;
-
-        console.log(number)
+    function randomtext() {
+      setTimeout(randomtext, 6000);
+      if (number == 0) {
+        number = 1;
+      } else {
+        number = 0;
+      }
+      head.innerHTML = headArray[number];
+      paragraph.innerHTML = `<hr class="one"> ${pArray[number]} <hr class = "two">`;
     }
-    // randomNumber();
-    setInterval(randomNumber, 3000);
-
+    setTimeout(randomtext,3000)
   </script>
-  <script src="./home.js"></script>
 </html>

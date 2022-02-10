@@ -3,7 +3,7 @@ document.write(
     <header class = "m-navheader">
       <div class="mnav-container">
           <nav class="m-nav">
-              <a href="./home.html" class="m-logo">DELUXE</a>
+              <a href="index.html" class="m-logo">DELUXE</a>
               <input type = "checkbox" id = "m-check" class="m-checkbtn">
               <label for="m-check" class="m-checkbtn">&nbsp;<i class = "fas fa-bars"><span class ="m-menutext">&nbsp;MENU&nbsp;</span></i></label>
               <ul class="m-nav-list">
