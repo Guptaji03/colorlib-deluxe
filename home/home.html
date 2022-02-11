@@ -30,106 +30,139 @@
     <link rel="stylesheet" href="./instagram.css" />
     <link rel="stylesheet" href="./nav.css" />
 
-
-
     <style>
-      .container{
+      .form-container {
         /* z-index: 1; */
         box-sizing: border-box;
-          display: grid;
-          grid-template-columns: repeat(5,1fr);
-          gap: 10px;
-          /* width: 90%; */
-         
-          position: absolute;
-          top: 102%;
-          margin-left: 60px;
-          
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2%;
+        font-family: "Playfair Display", sans-serif;
+        width: 90%;
+        position: absolute;
+        top: 102%;
+        margin-left: 8%;
       }
-      .container label{
-        font-size: 25px;
-          color: #8D703B;
-         
+      .form-container div {
+        font-family: "Playfair Display", sans-serif;
+        /* margin: auto; */
       }
-      .container input:focus,  select:focus{
+      ::placeholder {
+        color: #000;
+      }
+      .form-container label {
+        font-weight: 400;
+        font-size: 15px;
+        color: #8d703b;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .form-container input:focus,
+      select:focus {
         outline: none;
-    }
-  
-      .date{
+      }
+
+      .date {
         outline: none;
-          font-size: 20px;
-          padding: 15px;
-          box-sizing: border-box;
-          height: 135px;
-          width: 100%;
-          background-color: white;
+        font-size: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+        height: 120px;
+        width: 100%;
+        background-color: white;
       }
-     
-      .option{
-       
-          outline: none;
-          font-size: 20px;
-          padding: 15px;
-          box-sizing: border-box;
-          height: 135px;
-          width: 100%;
-          background-color: white;
-          
+
+      .option {
+        outline: none;
+        font-size: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+        height: 120px;
+        width: 100%;
+        background-color: white;
       }
-      
-      .in input{
+
+      .in input {
         margin-top: 10px;
-          font-size: 25px;
-          border: 0px;
-          height: 40px;
-          width: 100%;
-         box-sizing: border-box;
+        font-size: 20px;
+        border: 0px;
+        height: 40px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: "Playfair Display", sans-serif;
       }
-      .out input{
-       box-sizing: border-box;
+      .out input {
+        box-sizing: border-box;
         margin-top: 10px;
-          font-size: 25px;
-          border: 0px;
-          height: 40px;
-          width: 100%;
+        font-size: 20px;
+        border: 0px;
+        height: 40px;
+        width: 100%;
+        font-family: "Playfair Display", sans-serif;
       }
-      
-     .submit input {
-       font-size: 20px;
-        height: 135px;
+
+      .submit input {
+        font-size: 20px;
+        height: 120px;
+        margin-left: -54%;
         /* width: 220px; */
         border: 0px;
         padding: 20px;
-       
-     }
-     .submit :hover {
-       color: white;
-       background-color: #8D703B;
-     }
-     .ROOM{
-      margin-top: 10px;
-          font-size: 25px;
-          border: 0px;
-          height: 40px;
-          width: 90%;
-     
-     }
-      
-  </style>
+        color: white;
+        background-color: #8d703b;
+        cursor: pointer;
+        font-family: "Playfair Display", sans-serif;
+      }
+      .submit :hover {
+        color: white;
+        background-color: #000;
+      }
+      .room {
+        width: 70%;
+      }
+      .age {
+        margin-left: -30%;
+        width: 75%;
+      }
+      .ROOM {
+        margin-top: 10px;
+        font-size: 20px;
+        border: 0px;
+        height: 40px;
+        width: 80%;
+        font-family: "Playfair Display", sans-serif;
+      }
 
+      @media screen and (max-width: 776px) {
+        .form-container {
+          grid-template-columns: 1fr;
+          width: 25%;
+          position: relative;
+          padding-top: 3em;
+          padding-bottom: 5em;
+          width: 80vw;
+        }
+        .submit input {
+          margin-left: 0%;
+          height: 70px;
+          width: 80vw;
+        }
 
-
-
-
-
-
+        .age {
+          margin-left: 0%;
+          width: 75%;
+        }
+        .option{
+          width: 100vw;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div id="cf">
       <div class="holder1">
         <img class="img-top" src="./img/xbg_2.webp" />
-
       </div>
 
       <div class="holder">
@@ -139,67 +172,58 @@
         <h1 class="maintext">Welcome To Deluxe</h1>
         <p class="maindesc">Hotels and Resorts</p>
       </div>
+    </div>
+    <!-- work here -->
+
+    <div class="form-container">
+      <div class="in date">
+        <label>CHECK-IN DATE</label> <br />
+        <!-- <p >CHECK-IN DATE</p> <br> -->
+        <input
+          type="text"
+          placeholder="Check-in date"
+          onfocus="changeToDate(event)"
+          onblur="changeToText(event)"
+        />
       </div>
-      <!-- work here -->
+      <div class="out date">
+        <label for="check-out-date">CHECK-OUT DATE</label> <br />
+        <!-- <p >CHECK-OUT DATE</p> <br> -->
+        <input
+          type="text"
+          placeholder="Check-out date"
+          onfocus="changeToDate(event)"
+          onblur="changeToText(event)"
+        />
+      </div>
+      <div class="room option">
+        <label for="ROOM">ROOM</label> <br />
+        <select name="room" class="ROOM">
+          <option value="suite">Suite</option>
+          <option value="suite">Family Room</option>
+          <option value="suite">Deluxe Room</option>
+          <option value="suite">Classic Room</option>
+          <option value="suite">Superior Room</option>
+          <option value="suite">Luxury Room</option>
+        </select>
+      </div>
+      <div class="age option">
+        <label for="ROOM">CUSTOMER</label> <br />
+        <select name="room" class="ROOM">
+          <option value="suite">1 Adult</option>
+          <option value="suite">2 Adult</option>
+          <option value="suite">3 Adult</option>
+          <option value="suite">4 Adult</option>
+          <option value="suite">5 Adult</option>
+          <option value="suite">6 Adult</option>
+        </select>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Check Availability" />
+      </div>
+    </div>
 
-
-      <div class="container">
-        <div class="in date">
-   <label >CHECK-IN DATE</label> <br>
-   <!-- <p >CHECK-IN DATE</p> <br> -->
-   <input type="text" placeholder="Check-in date" > </div>
-   <div class="out date ">
-   <label for="check-out-date">CHECK-OUT DATE</label> <br>
-   <!-- <p >CHECK-OUT DATE</p> <br> -->
-   <input type="text" placeholder="Check-out date" > </div>
-   <div class="room option">
-  <label for="ROOM">ROOM</label> <br>
-  <select name="room" class="ROOM">
-      <option value="suite">Suite</option>
-      <option value="suite">Family Room</option>
-      <option value="suite">Deluxe Room</option>
-      <option value="suite">Classic Room</option>
-      <option value="suite">Superior Room</option>
-      <option value="suite">Luxury Room</option>
-  </select>
-</div>
-<div class="age option">
-  <label for="ROOM">CUSTOMER</label> <br>
-  <select name="room" class="ROOM">
-      <option value="suite">1Adult</option>
-      <option value="suite">2Adult</option>
-      <option value="suite">3Adult</option>
-      <option value="suite">4Adult</option>
-      <option value="suite">5Adult</option>
-      <option value="suite">6Adult</option>
-  </select>
-</div>
-<div class="submit">
-  <input type="submit" value="Check Availability">
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- ============================================= -->
+    <!-- ============================================= -->
     <!-- navigaton -->
     <script src="./nav.js"></script>
     <!-- Main section -->
@@ -421,6 +445,15 @@
       head.innerHTML = headArray[number];
       paragraph.innerHTML = `<hr class="one"> ${pArray[number]} <hr class = "two">`;
     }
-    setTimeout(randomtext,3000)
+    setTimeout(randomtext, 3000);
+
+    function changeToDate(e) {
+      console.log(e);
+      e.target.type = "date";
+    }
+    function changeToText(e) {
+      console.log(e);
+      e.target.type = "text";
+    }
   </script>
 </html>
