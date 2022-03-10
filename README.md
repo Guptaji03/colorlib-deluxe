@@ -2,7 +2,7 @@
 # Delux Clone
 
 Delux is a website for hotel and resort booking. This has been a project built within a
-week in colabration with 3 team members
+week in collaboration with 4 team members
 
 
 
